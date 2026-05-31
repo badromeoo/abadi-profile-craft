@@ -1,5 +1,12 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "tanstack-start"
+  "framework": "tanstack-start",
+  "builds": [
+    { "src": "dist/server/server.js", "use": "@vercel/node" },
+    { "src": "dist/client/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "(.*)", "dest": "/dist/server/server.js" }
+  ]
 }
