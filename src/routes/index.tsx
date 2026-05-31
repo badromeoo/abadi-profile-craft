@@ -3,6 +3,12 @@ import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 import { Instagram, MapPin, Clock, ArrowUpRight } from "lucide-react";
 import kopiImg from "../public/img/tokokopiabadi.jpg";
+import kopiImg1 from "../public/img/tokokopiabadi1.jpg";
+import kopiImg2 from "../public/img/tokokopiabadi2.jpg";
+import kopiImg3 from "../public/img/tokokopiabadi3.jpg";
+import kopiImg4 from "../public/img/tokokopiabadi4.jpg";
+import kopiImg5 from "../public/img/tokokopiabadi5.jpg";
+import kopiImg6 from "../public/img/tokokopiabadi6.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -44,12 +50,12 @@ const menu = [
 ];
 
 const gallery = [
-  { ratio: "aspect-[4/5]", label: "Sudut jendela pagi" },
-  { ratio: "aspect-square", label: "Tangan dan cangkir" },
-  { ratio: "aspect-square", label: "Biji kopi pilihan" },
-  { ratio: "aspect-[4/5]", label: "Obrolan sore" },
-  { ratio: "aspect-[4/5]", label: "Latte art" },
-  { ratio: "aspect-square", label: "Meja kayu tua" },
+  { ratio: "aspect-[4/5]", label: "Sudut jendela pagi", img: kopiImg1 },
+  { ratio: "aspect-square", label: "Tangan dan cangkir", img: kopiImg2 },
+  { ratio: "aspect-square", label: "Biji kopi pilihan", img: kopiImg3 },
+  { ratio: "aspect-[4/5]", label: "Obrolan sore", img: kopiImg4 },
+  { ratio: "aspect-[4/5]", label: "Latte art", img: kopiImg5 },
+  { ratio: "aspect-square", label: "Meja kayu tua", img: kopiImg6 },
 ];
 
 function Placeholder({ label, className = "" }: { label: string; className?: string }) {
@@ -229,7 +235,14 @@ function Index() {
         <Reveal delay={150}>
           <div className="mt-10 md:mt-12 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
             {gallery.map((g) => (
-              <Placeholder key={g.label} label={g.label} className={g.ratio} />
+              <div key={g.label} className={`overflow-hidden rounded-md ${g.ratio}`}>
+                <img
+                  src={g.img}
+                  alt={g.label}
+                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
             ))}
           </div>
         </Reveal>
