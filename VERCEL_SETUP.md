@@ -3,17 +3,22 @@
 ## Perubahan yang Dilakukan:
 
 ### 1. **vercel.json** ✅
+
 File konfigurasi untuk Vercel yang menentukan:
+
 - Build command: `npm run build`
 - Output directory: `.output/server`
 - Node version: 18.x
 - Framework detection: "other" (karena TanStack Start)
 
 ### 2. **.nvmrc** ✅
+
 File untuk menentukan Node.js version (18) yang akan digunakan Vercel
 
 ### 3. **vite.config.ts** ✅
+
 Diperbarui dengan konfigurasi Nitro untuk Node.js:
+
 ```typescript
 nitro: {
   presets: ["node_server"],
@@ -27,6 +32,7 @@ nitro: {
 ## Langkah Deployment ke Vercel:
 
 1. **Push perubahan ke Git**
+
    ```bash
    git add .
    git commit -m "Add Vercel configuration for TanStack Start"
@@ -55,6 +61,7 @@ nitro: {
 ⚠️ **Package Manager**: Project ini menggunakan **Bun** (bun.lock), tapi Vercel menggunakan `npm`. Jika ada issue dengan dependency, pastikan semua packages tercatat di package.json dengan benar.
 
 ✅ **Build Output**: Nitro dengan preset `node_server` akan generate:
+
 - `.output/public/` - Static files
 - `.output/server/` - Server executable untuk Vercel
 

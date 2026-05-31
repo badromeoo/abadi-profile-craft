@@ -2,17 +2,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".output/server",
   "installCommand": "npm install",
-  "framework": "other",
-  "nodeVersion": "18.x",
-  "functions": {
-    "api/**.ts": {
-      "runtime": "nodejs18.x"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/.output/server"
-    }
-  ]
+  "framework": "other"
 }
