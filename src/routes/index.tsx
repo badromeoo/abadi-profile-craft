@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { Reveal } from "@/components/Reveal";
 import { Instagram, MapPin, Clock, ArrowUpRight } from "lucide-react";
 
