@@ -309,7 +309,7 @@ function Index() {
                 </div>
 
                 <a
-                  href="https://maps.google.com"
+                  href="https://maps.app.goo.gl/ZzvfuJ3GR4dj5Vmf9"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex w-full md:w-auto h-12 md:h-14 items-center justify-center gap-2 rounded-full bg-foreground px-6 md:px-8 text-sm md:text-base font-medium text-background transition-transform duration-300 hover:scale-[1.03]"
