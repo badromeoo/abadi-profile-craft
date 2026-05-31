@@ -12,4 +12,22 @@ export default defineConfig({
     // nitro/vite builds from this
     server: { entry: "server" },
   },
+  vite: {
+    ssr: {
+      external: ["@lovable.dev/vite-tanstack-config"],
+    },
+  },
+  nitro: {
+    // Configure for Vercel deployment
+    presets: ["node_server"],
+    output: {
+      dir: ".output",
+      publicDir: ".output/public",
+    },
+    publicAssets: [
+      {
+        dir: "./public",
+      },
+    ],
+  },
 });
