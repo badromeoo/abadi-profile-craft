@@ -273,10 +273,7 @@ function Index() {
                   <div>
                     <p className="text-sm md:text-base font-medium">Jam Buka</p>
                     <p className="mt-1 text-sm md:text-base text-muted-foreground">
-                      Senin – Jumat &nbsp;·&nbsp; 07.00 – 22.00
-                    </p>
-                    <p className="text-sm md:text-base text-muted-foreground">
-                      Sabtu – Minggu &nbsp;·&nbsp; 08.00 – 23.00
+                      Setiap Hari &nbsp;·&nbsp; 07.00 – 23.00
                     </p>
                   </div>
                 </div>
@@ -286,9 +283,9 @@ function Index() {
                   <div>
                     <p className="text-sm md:text-base font-medium">Alamat</p>
                     <p className="mt-1 text-sm md:text-base text-muted-foreground leading-relaxed">
-                      Jl. Cendana No. 17, Menteng
+                      Jl. Serma Kawi No.1, Dauh Puri Klod, Kec. Denpasar Barat
                       <br />
-                      Jakarta Pusat 10310
+                      Kota Denpasar, Bali
                     </p>
                   </div>
                 </div>
