@@ -14,7 +14,7 @@ export function LocationSection() {
               Singgah
             </p>
             <h2 className="font-serif-display text-3xl md:text-4xl lg:text-[2.75rem] leading-tight">
-              Pintu kami selalu terbuka untuk Anda.
+              Pintu kami selalu terbuka untuk Anda
             </h2>
           </Reveal>
         </div>
@@ -49,7 +49,7 @@ export function LocationSection() {
                 <div>
                   <p className="text-sm md:text-base font-medium">Instagram</p>
                   <a
-                    href="https://instagram.com"
+                    href="https://www.instagram.com/tokokopiabadi"
                     target="_blank"
                     rel="noreferrer"
                     className="mt-1 text-sm md:text-base text-muted-foreground hover:text-primary transition-colors"
